@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" media="all" href="css/grid.css"/>
+		<link rel="stylesheet" media="screen and (max-width:1200px)" href="css/grid_fix_big.css" />
+		<link rel="stylesheet" media="screen and (max-width:767px)" href="css/grid_fix_mobile.css" />
+		<link rel="stylesheet" media="all" href="css/perso.css" />
+		
+		<meta name="viewport" content="width=device-width, maximum-scale=1"/>
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+		<script src="js/jquery-1.7.1.js" language="JavaScript"></script>
+		<script src="js/grid_controller.js" language="JavaScript"></script>
+		<!--[if IE]>
+			<script src="js/ie_grid_controller.js" language="JavaScript"></script>
+		<![endif]-->
+	</head>
+	
+	<body lang="en">
+		
+		<div class="wrapper">
+			<div class="row">
+				<div class="span10 liquid first last">
+					<h1 class="big_title">
+						Dat.grid
+					</h1>
+					<h2 class="subtitle">
+						A css and js Fluid / Solid / Responsive grid system.
+					</h2>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<div class="span10 first last liquid">
+					<h3 class="subsubtitle">
+						Entirely fluid row:
+					</h3>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<div class="span1 liquid first blueback shadow" data-span="1"><p>Span1</p></div>
+				<div class="span1 liquid blueback shadow" data-span="1"><p>Span1</p></div>
+				<div class="span3 liquid blueback shadow" data-span="3"><p>Span3</p></div>
+				<div class="span2 liquid blueback shadow" data-span="2"><p>Span2</p></div>
+				<div class="span1 liquid blueback shadow" data-span="1"><p>Span1</p></div>
+				<div class="span1 liquid blueback shadow" data-span="1"><p>Span1</p></div>
+				<div class="span1 liquid last blueback shadow" data-span="1"><p>Span1</p></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="wrapper">
+			<div class="row">
+				<div class="span10 first last liquid">
+					<h3 class="subsubtitle">
+						Mixed row:
+					</h3>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<div class="span1 first blueback shadow"><p>Span1 fixed</p></div>
+				<div class="span1 blueback shadow liquid" data-span="1"><p>Span1 liquid</p></div>
+				<div class="span3 blueback shadow liquid " data-span="3"><p>Span3 liquid</p></div>
+				<div class="span2 blueback shadow"><p>Span2 fixed</p></div>
+				<div class="span1 blueback shadow liquid" data-span="1"><p>Span1 liquid</p></div>
+				<div class="span1 blueback shadow"><p>Span1 fixed</p></div>
+				<div class="span1 last blueback shadow"><p>Span1 fixed</p></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="wrapper fixed">
+			<div class="row">
+				<div class="span10 first last liquid">
+					<h3 class="subsubtitle">
+						Entirely fixed row:
+					</h3>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<div class="span1 first blueback shadow"><p>Span1</p></div>
+				<div class="span1 blueback shadow"><p>Span1</p></div>
+				<div class="span3 blueback shadow"><p>Span3</p></div>
+				<div class="span2 blueback shadow"><p>Span2</p></div>
+				<div class="span1 blueback shadow"><p>Span1</p></div>
+				<div class="span1 blueback shadow"><p>Span1</p></div>
+				<div class="span1 last blueback shadow"><p>Span1</p></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="wrapper">
+			<div class="row">
+				<div class="span10 liquid first last" data-span="10">
+					<h2 class="subtitle">
+						How to - entirely liquid grid
+					</h2>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<div class="span3 liquid first" data-span="3">
+					<p>
+						<ul>
+							<li>A set of rows must be inside a div with class "wrapper"</li>
+							<li>You can place as many rows as you want in a wrapper</li>
+							<li>The first column needs the class "first"</li>
+							<li>The last column needs the class "last" ('you don't say..')</li>
+							<li>Each column needs the class "liquid"</li>
+							<li>Each column needs the class spanX (where X is the width of the column; ex: span1, span2, [...], span10)</li>
+							<li>The sum of all the widths needs to be 10</li>
+							<li>Each column need the attribute "data-span" and it's value must be the same as the span</li>
+							<li>After the row's div closing tag you need an empty div with class "clear"</li>
+						</ul>
+					</p>
+				</div>
+				<div class="span7 liquid last" data-span="7">
+						<xmp class="code">
+<div class="wrapper">
+	<div class="row">
+		<div class="span1 liquid first" data-span="1"><p>Span1</p></div>
+		<div class="span1 liquid" data-span="1"><p>Span1</p></div>
+		<div class="span3 liquid" data-span="3"><p>Span3</p></div>
+		<div class="span2 liquid" data-span="2"><p>Span2</p></div>
+		<div class="span1 liquid" data-span="1"><p>Span1</p></div>
+		<div class="span1 liquid" data-span="1"><p>Span1</p></div>
+		<div class="span1 liquid last" data-span="1"><p>Span1</p></div>
+	</div>
+	<div class="clear"></div>
+</div>
+						</xmp>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="wrapper">
+			<div class="row">
+				<div class="span10 liquid first last" data-span="10">
+					<h2 class="subtitle">
+						How to - Mixed grid
+					</h2>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<div class="span3 liquid first" data-span="3">
+					<p>The same rules as above apply, except:
+						<ul>
+							<li>Columns which are not fluid don't need the class "liquid"</li>
+							<li>Columns which are not fluid don't need the "data-span" attribute</li>
+						</ul>
+					</p>
+				</div>
+				<div class="span7 liquid last" data-span="7">
+						<xmp class="code">
+<div class="wrapper">
+	<div class="row">
+		<div class="span1 first" data-span="1"><p>Span1</p></div>
+		<div class="span1 liquid" data-span="1"><p>Span1</p></div>
+		<div class="span3 liquid " data-span="3"><p>Span3</p></div>
+		<div class="span2" data-span="2"><p>Span2</p></div>
+		<div class="span1 liquid" data-span="1"><p>Span1</p></div>
+		<div class="span1 " data-span="1"><p>Span1</p></div>
+		<div class="span1 last" data-span="1"><p>Span1</p></div>
+	</div>
+	<div class="clear"></div>
+</div>
+						</xmp>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="wrapper">
+			<div class="row">
+				<div class="span10 liquid first last" data-span="10">
+					<h2 class="subtitle">
+						How to - Entirely fixed grid
+					</h2>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="row">
+				<div class="span3 liquid first" data-span="3">
+					<p>The same rules as above apply, except:
+						<ul>
+							<li>The wrapper needs the class "fixed"</li>
+							<li>No div needs the "data-span" attribute</li>
+						</ul>
+					</p>
+				</div>
+				<div class="span7 liquid last" data-span="7">
+						<xmp class="code">
+<div class="wrapper fixed">
+	<div class="row">
+		<div class="span1 first"><p>Span1</p></div>
+		<div class="span1"><p>Span1</p></div>
+		<div class="span3"><p>Span3</p></div>
+		<div class="span2"><p>Span2</p></div>
+		<div class="span1"><p>Span1</p></div>
+		<div class="span1"><p>Span1</p></div>
+		<div class="span1 last"><p>Span1</p></div>
+	</div>
+	<div class="clear"></div>
+</div>
+						</xmp>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+	
+</html>

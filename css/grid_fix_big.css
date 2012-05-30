@@ -1,0 +1,72 @@
+	body {
+		font-family:Helvetica, Arial, sans-serif;
+		background-color:#f00;
+		text-align: left;
+		color: #333;
+	}
+	div{
+		/*border-radius: 5px;*/
+	}
+.wrapper{
+		width:740px;
+		padding: 0 10px;
+		margin:10px auto;
+		background-color:#fb3;
+		overflow:hidden;
+		padding-bottom:10px;
+	}
+	.row{
+		width:740px;
+		margin-left: 0%;
+	}
+	.clear{
+		clear:left;
+	}
+	.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10{
+		float:left;
+		margin-left:20px;
+	}
+	.span1, .span1 .liquid{
+		width:56px !important;
+		
+	}
+	.span2, .span2 .liquid{
+		width:132px !important;
+	}
+	.span3, .span3 .liquid{
+		width:208px !important;
+	}
+	.span4, .span4 .liquid{
+		width:284px !important;
+	}
+	.span5, .span5 .liquid{
+		width:360px !important;
+	}
+	.span6, .span6 .liquid{
+		width:436px !important;
+	}
+	.span7, .span7 .liquid{
+		width:512px !important;
+	}
+	.span8, .span8 .liquid{
+		width:588px !important;
+	}
+	.span9, .span9 .liquid{
+		width:674px !important;
+	}
+	.span10, .span10 .liquid{
+		width:740px !important;
+	}
+	.last{
+		/*float:right;
+		float:none;_position:relative; _left:-3px; _margin-right: -3px;width:auto;
+		overflow: hidden;_overflow:visible;_zoom:1*/
+		float:right;
+		position:relative;
+		left:-50px;
+		margin-right:-50px;
+	}
+	.first{
+		margin-left:0;
+	}
+	

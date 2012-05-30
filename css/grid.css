@@ -1,0 +1,102 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+body {
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+	
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10{
+	float:left;
+	margin-left:20px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+body {
+	
+}
+
+.wrapper{
+	max-width:1480px;
+	padding: 0 10px;
+	margin:10px auto;
+	overflow:hidden;
+	margin-top:10px;
+}
+.row{
+	width:100%;
+	margin-left: 0%;
+	overflow:hidden;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.clear{
+	clear:left;
+}
+.span1{
+	width:76px;
+}
+.span2{
+	width:172px;
+}
+.span3{
+	width:268px;
+}
+.span4{
+	width:364px;
+}
+.span5{
+	width:460px;
+}
+.span6{
+	width:556px;
+}
+.span7{
+	width:652px;
+}
+.span8{
+	width:748px;
+}
+.span9{
+	width:844px;
+}
+.span10{
+	width:940px;
+}
+.liquid{
+	float:left;
+	margin-left:20px;
+	width:auto;
+}
+.last{
+	float:right;
+	position:relative;
+	left:-50px;
+	margin-right:-50px;
+}
+.first{
+	margin-left:0;
+}
+.fixed{
+	width:940px;
+}
+.push{
+	visibility:hidden;
+	height:1px;
+}

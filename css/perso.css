@@ -1,0 +1,52 @@
+body{
+	font-family:Arial, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#333;
+	background-color:#efefef;
+}
+.wrapper{
+	background-color:#fff;
+	border-radius:10px;
+	background-image:url('../img/back.png');
+	border:1px solid #333;
+	-webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, .2);
+	box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, .2);
+}
+.big_title{
+	font-size:80px;
+	line-height:90px;
+	text-align:center;
+	font-weight:bold;
+}
+.subtitle{
+	text-align:center;
+	font-weight:100;
+}
+.subsubtitle{
+	text-align:center;
+}
+.blueback{
+	background-color:#f00;
+	background-color:rgba(0,95,295,.5);
+	padding:10px 0 5px 0;
+}
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10{
+	border-radius:5px;
+}
+.span1 p, .span2 p, .span3 p, .span4 p, .span5 p, .span6 p, .span7 p, .span8 p, .span9 p, .span10 p{
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+}
+.shadow{
+	box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, .5); 
+}
+.code{
+	background-color:#2d3a43;
+	color:#fff;
+	font-family: Courier, Times;
+	border-radius:5px;
+	text-align:left;
+	overflow:scroll;
+}
